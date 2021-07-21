@@ -1,6 +1,9 @@
 'use strict'
 
-class Ship extends DynamicObject {
+import { DynamicObject } from "./dynamic"
+import {Utils} from './utils'
+
+export class Ship extends DynamicObject {
   constructor (two, posX, posY, vx, vy, rotation) {
     super()
     this.two = two

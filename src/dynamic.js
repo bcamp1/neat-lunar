@@ -1,6 +1,8 @@
 'use strict'
 
-class DynamicObject {
+import {Utils} from './utils'
+
+export class DynamicObject {
   constructor () {
     this.v = new Two.Vector(0, 0)
     this.av = 0

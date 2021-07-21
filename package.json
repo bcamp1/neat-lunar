@@ -4,7 +4,8 @@
   "description": "A lunar lander bot using NEAT",
   "main": "server.js",
   "scripts": {
-    "test": "node server.js"
+    "start": "node server.js",
+    "build": "webpack"
   },
   "author": "Branson Camp",
   "license": "ISC",

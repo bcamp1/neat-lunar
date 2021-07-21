@@ -1,6 +1,6 @@
 'use strict'
 
-class Camera {
+export class Camera {
   constructor (two) {
     this.two = two
     this.scene = two.scene

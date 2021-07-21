@@ -1,10 +1,12 @@
 'use strict'
 
+import {Utils} from './utils'
+
 const padYrange = 400
 const maxDeflection = 280
 const roughness = 0.7 // decrease the deflection by this on each recursion
 
-class Terrain {
+export class Terrain {
   constructor (two) {
     this.two = two
     this.minX = -1 * two.width
@@ -41,7 +43,7 @@ class Terrain {
       y = -padYrange / 2 + Math.random() * padYrange
       let originX = x - padWidth / 2
       let originY = y - padHeight / 2
-      let pad = new Terrain.Pad(originX, originY)
+      let pad = new Pad(originX, originY)
       pads.push(pad)
     }
     return pads
@@ -164,7 +166,7 @@ class Terrain {
 const padWidth = 80
 const padHeight = 4
 
-Terrain.Pad = class {
+class Pad {
   constructor (x, y) {
     this.pad = new Two.Rectangle(x, y, padWidth, padHeight)
     this.fill = 'Grey'

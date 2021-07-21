@@ -11,6 +11,6 @@ const port = process.env.PORT || 80;
 
 // })
 
-app.use(express.static(__dirname + '/public'));
+app.use(express.static(__dirname + '/dist'));
 
 http.listen(port, () => console.log('listening on port ' + port));

@@ -1,6 +1,6 @@
 'use strict'
 
-class Utils {
+export class Utils {
   static clamp (number, min, max) {
     return Math.min(Math.max(number, min), max)
   };
